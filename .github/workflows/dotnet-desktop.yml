@@ -12,5 +12,7 @@ jobs:
         id: one
         run: |
           echo "action_status=yellow" >> $GITHUB_ENV
+      - name: checkout repo
+        uses : actions/checkout@v3
       
   

@@ -1,1 +1,1 @@
-this is the sample file to testing the fetch and pull commands
+this is the sample file to testing the fetch and pull commands, added some other commands.

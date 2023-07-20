@@ -11,6 +11,6 @@ jobs:
       - name: set the value
         id: one
         run: |
-          echo "action_status=red" >> $GITHUB_ENV
+          echo "action_status=yellow" >> $GITHUB_ENV
       
   

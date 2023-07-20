@@ -1,0 +1,16 @@
+name: samplebranch
+on: 
+  push:
+     branches: [ "NEW" ]
+  
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: set the value
+        id: one
+        run: |
+          echo "action_status=blue" >> $GITHUB_ENV
+      
+  

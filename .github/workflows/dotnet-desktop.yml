@@ -11,6 +11,8 @@ jobs:
       - name: set the value
         id: one
         run: |
-          echo "action_status=blue" >> $GITHUB_ENV
+          echo "action_status=red" >> $GITHUB_ENV
+      - name: checkout repo
+        uses : actions/checkout@v3
       
   

@@ -1,7 +1,7 @@
 name: samplebranch
 on: 
   push:
-     branches: [ "NEW" ]
+     branches: [ "TRIAL" ]
   
   workflow_dispatch:
 jobs:

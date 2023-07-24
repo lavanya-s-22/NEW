@@ -20,12 +20,12 @@ jobs:
     
      
         env:
-          VAR1: This is
-          VAR2: A Demo of
-          VAR3: GitHub Actions
-          VAR4: Workflow jobs
+          a1: This is
+          a2: A Demo of
+          a3: GitHub Actions
+          a4: Workflow jobs
         run: |
-          echo $VAR1 $VAR2 $VAR3 $VAR4.
+          echo $a1 $a2 $a3 $a4.
            
       
   

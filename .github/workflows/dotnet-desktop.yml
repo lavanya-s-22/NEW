@@ -8,11 +8,24 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - name: set the value
-        id: one
+      #- name: set the value
+       # id: one
+        #run: |
+         # echo "action_status=red" >> $GITHUB_ENV
+     # - name: checkout repo
+       # uses : actions/checkout@v3
+  
+    
+      - name: The first demo job
+    
+     
+        env:
+          VAR1: This is
+          VAR2: A Demo of
+          VAR3: GitHub Actions
+          VAR4: Workflow jobs
         run: |
-          echo "action_status=red" >> $GITHUB_ENV
-      - name: checkout repo
-        uses : actions/checkout@v3
+          echo $VAR1 $VAR2 $VAR3 $VAR4.
+           
       
   

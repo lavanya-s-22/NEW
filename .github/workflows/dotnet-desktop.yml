@@ -1,7 +1,7 @@
 name: .NET
 on: 
   push:
-  fork:
+  
      branches: [ "TRIAL" ]
   
   workflow_dispatch:

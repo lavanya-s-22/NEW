@@ -1,18 +1,32 @@
-name: samplebranch
+name: .NET
 on: 
   push:
-     branches: [ "NEW" ]
+  
+     branches: [ "TRIAL" ]
   
   workflow_dispatch:
 jobs:
   build:
     runs-on: windows-latest
     steps:
-      - name: set the value
-        id: one
+      #- name: set the value
+       # id: one
+        #run: |
+         # echo "action_status=red" >> $GITHUB_ENV
+     # - name: checkout repo
+       # uses : actions/checkout@v3
+  
+    
+      - name: The first demo job
+    
+     
+        env:
+          a1: This is
+          a2: A Demo of
+          a3: GitHub Actions
+          a4: Workflow jobs
         run: |
-          echo "action_status=red" >> $GITHUB_ENV
-      - name: checkout repo
-        uses : actions/checkout@v3
+          echo $a1 $a2 $a3 $a4.
+           
       
   

@@ -1,0 +1,3 @@
+hello
+repo
+text files added and push to git 

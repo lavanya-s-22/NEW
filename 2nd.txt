@@ -1,3 +1,0 @@
-this is the sample file to testing the fetch and pull commands, added some other commands.
-ne yaml file added
-newww

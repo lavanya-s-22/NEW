@@ -13,7 +13,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Artifact
-          #path: SimpleFeedReader/website/**
+          path: "./Example"
           if-no-files-found: Error   
       - name: set the value
         id: one

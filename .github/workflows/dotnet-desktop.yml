@@ -8,7 +8,9 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-     
+      - name: branch name
+        run: echo This is yaml file
+             echo '$GITHYB_WORKFLOW'
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
         with:

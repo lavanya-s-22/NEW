@@ -14,7 +14,7 @@ jobs:
         with:
           name: Artifact
           path: "./Example"
-          if-no-files-found: Error   
+          #if-no-files-found: Error   
       - name: set the value
         id: one
         run: |

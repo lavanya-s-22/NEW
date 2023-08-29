@@ -8,6 +8,14 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
+      - name: Build
+        run: dotnet build --no-restore
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: website
+          path: SimpleFeedReader/website/**
+          if-no-files-found: No files found  
       - name: set the value
         id: one
         run: |

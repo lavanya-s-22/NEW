@@ -10,7 +10,11 @@ jobs:
     steps:
       - name: branch name
         run: echo This is yaml file
-             echo '$GITHYB_WORKFLOW'
+             echo '$GITHuB_WORKFLOW'
+      - name: artifacts
+        run: |
+          mkdir -p~/new/artifact
+          echo example > ~/new/artifact/Example.txt
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
         with:

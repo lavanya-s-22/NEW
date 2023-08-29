@@ -11,10 +11,10 @@ jobs:
      
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
-        #with:
-          #name: website
+        with:
+          name: Artifact
           #path: SimpleFeedReader/website/**
-          #if-no-files-found: No files found  
+          if-no-files-found: Error   
       - name: set the value
         id: one
         run: |

@@ -11,6 +11,10 @@ jobs:
       - name: branch name
         run: echo This is yaml file
              echo '$GITHuB_WORKFLOW'
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}       
       - name: artifacts
         run: |
           mkdir -p~/new/artifact

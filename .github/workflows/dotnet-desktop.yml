@@ -14,11 +14,16 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: ${{ env.DOTNET_VERSION }}       
-      - name: artifacts
-        run: |
-          mkdir -p~/new/artifact
-          echo example > ~/new/artifact/Example.txt
+          dotnet-version: ${{ env.DOTNET_VERSION }} 
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v2
+        with:
+          name: .net-app
+          path: ${{env.DOTNET_ROOT}}/Example   
+     # - name: artifacts
+        #run: |
+         # mkdir -p~/new/artifact
+          #echo example > ~/new/artifact/Example.txt
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3
         with:
